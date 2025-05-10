@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra não realizada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #d8d8d8 0%, #dbdddc 100%);
+        }
+        main {
+            background: #fff;
+            padding: 48px 32px 32px 32px;
+            border-radius: 32px;
+            box-shadow: 0 8px 32px rgba(239, 240, 240, 0.18);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        .icon-error {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 24px;
+            display: inline-block;
+            background: #ffeaea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -70px;
+            box-shadow: 0 2px 8px rgba(185,28,28,0.07);
+        }
+        .icon-error svg {
+            width: 48px;
+            height: 48px;
+            color: #b91c1c;
+        }
+        h1 {
+            color: #b91c1c;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #444;
+            font-size: 1.15rem;
+            margin-bottom: 24px;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 12px 32px;
+            background: linear-gradient(90deg, #7c3aed 60%, #3aab91 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(124,58,237,0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        a.button:hover {
+            background: linear-gradient(90deg, #3aab91 60%, #7c3aed 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        footer {
+            margin-top: 32px;
+            color: #e0f2f1;
+            font-size: 1rem;
+            text-shadow: 0 1px 2px #0002;
+        }
+        @media (max-width: 500px) {
+            main {
+                padding: 32px 10px 24px 10px;
+                border-radius: 18px;
+            }
+            .icon-error {
+                width: 60px;
+                height: 60px;
+                margin-top: -50px;
+            }
+            .icon-error svg {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <span class="icon-error">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="22" stroke="#b91c1c" stroke-width="3" fill="none"/>
+                <line x1="24" y1="14" x2="24" y2="28" stroke="#b91c1c" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="24" cy="35" r="2.5" fill="#b91c1c"/>
+            </svg>
+        </span>
+        <h1>Compra não realizada</h1>
+        <p>
+            Ocorreu um erro ao processar sua compra.<br>
+            Por favor, verifique seus dados e tente novamente.<br>
+            Se o problema persistir, entre em contato com nosso suporte.
+        </p>
+        <a href="http://127.0.0.1:5501/index.html" class="button">Voltar à Loja</a>
+    </main>
+    <footer>
+        <p>&copy; 2023 Armazém do Sítio</p>
+    </footer>
+</body>
+</html>
